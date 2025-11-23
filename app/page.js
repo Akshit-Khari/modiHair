@@ -8,46 +8,46 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gray-50">
+      <div className="w-full bg-gray-50">
         {/* HERO SECTION */}
-        <section className="bg-gradient-to-br from-blue-50 to-teal-50 py-20 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="text-teal-600 font-semibold mb-4 flex items-center">
+        <section className="bg-gradient-to-br from-blue-50 to-teal-50 py-12 sm:py-20 px-4 sm:px-6 w-full">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center w-full">
+          <div className="w-full">
+            <div className="text-teal-600 font-semibold mb-4 flex items-center text-sm sm:text-base">
               <span className="mr-2">👋</span> WELCOME TO HAIRCLINIC
             </div>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Simplified hair restoration for everyone
             </h1>
-            <p className="text-gray-600 text-lg mb-8">
+            <p className="text-gray-600 text-base sm:text-lg mb-8">
               HairClinic doctors go beyond symptoms to treat the root cause of your hair loss and provide a personalized long-term solution.
             </p>
-            <Link href="/book" className="inline-block bg-teal-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-700 transition flex items-center">
+            <Link href="/book" className="inline-block bg-teal-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-teal-700 transition flex items-center text-sm sm:text-base">
               <Phone className="mr-2 w-5 h-5" />
               SCHEDULE YOUR CONSULTATION
             </Link>
           </div>
           
-          <div className="relative">
-            <div className="bg-white rounded-3xl shadow-2xl p-8">
+          <div className="relative w-full hidden md:block">
+            <div className="bg-white rounded-3xl shadow-2xl p-4 sm:p-8">
               <img 
                 src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=600&fit=crop" 
                 alt="Happy patient" 
-                className="rounded-2xl w-full h-96 object-cover"
+                className="rounded-2xl w-full h-64 sm:h-96 object-cover"
               />
             </div>
           </div>
         </div>
 
         {/* STATS */}
-        <div className="max-w-7xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="text-5xl font-bold text-teal-600 mb-2">+3,500</div>
-            <div className="text-gray-600">Patients treated</div>
+        <div className="max-w-7xl mx-auto mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center w-full">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
+            <div className="text-3xl sm:text-5xl font-bold text-teal-600 mb-2">+3,500</div>
+            <div className="text-gray-600 text-sm sm:text-base">Patients treated</div>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="text-5xl font-bold text-teal-600 mb-2">+15</div>
-            <div className="text-gray-600">Specialists available</div>
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
+            <div className="text-3xl sm:text-5xl font-bold text-teal-600 mb-2">+15</div>
+            <div className="text-gray-600 text-sm sm:text-base">Specialists available</div>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="text-5xl font-bold text-teal-600 mb-2">+10</div>
